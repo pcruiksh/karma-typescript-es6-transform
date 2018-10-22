@@ -1,6 +1,6 @@
 {
   "name": "@pcruiksh/karma-typescript-es6-transform",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A fork of karma-typescript-es6-transform that uses Babel 7",
   "main": "dist/transform.js",
   "keywords": [
