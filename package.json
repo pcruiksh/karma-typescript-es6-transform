@@ -1,7 +1,7 @@
 {
-  "name": "karma-typescript-es6-transform",
-  "version": "1.0.4",
-  "description": "Plugin for transforming ES2015 javascript code to to ES5 syntax.",
+  "name": "@pcruiksh/karma-typescript-es6-transform",
+  "version": "0.0.1",
+  "description": "A fork of karma-typescript-es6-transform that uses Babel 7",
   "main": "dist/transform.js",
   "keywords": [
     "babel",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/monounity/karma-typescript-es6-transform.git"
+    "url": "https://github.com/pcruiksh/karma-typescript-es6-transform.git"
   },
   "license": "MIT",
   "scripts": {
@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "acorn": "^5.4.1",
-    "babel-core": "^6.23.1",
-    "babel-preset-env": "^1.6.1",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
     "log4js": "^1.1.1",
     "magic-string": "^0.22.4"
   },

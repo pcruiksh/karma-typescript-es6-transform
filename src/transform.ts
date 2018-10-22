@@ -1,5 +1,5 @@
 import * as acorn from "acorn";
-import * as babel from "babel-core";
+import * as babel from "@babel/core";
 import * as ESTree from "estree";
 import * as log4js from "log4js";
 
