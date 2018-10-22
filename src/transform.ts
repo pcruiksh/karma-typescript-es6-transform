@@ -1,11 +1,9 @@
 import * as acorn from "acorn";
 import * as babel from "@babel/core";
 import * as ESTree from "estree";
-import * as log4js from "log4js";
 
 import * as kt from "karma-typescript/src/api/transforms";
 
-let log: log4js.Logger;
 let walk: any;
 
 const isEs6 = (ast: ESTree.Program): boolean => {
@@ -58,7 +56,6 @@ const configure = (options?: babel.TransformOptions) => {
         if (isEs6(context.js.ast)) {
 
             options.filename = context.filename;
-            log.debug("Transforming %s", options.filename);
 
             try {
                 context.source = babel.transform(context.source, options).code;
@@ -74,10 +71,7 @@ const configure = (options?: babel.TransformOptions) => {
         }
     };
 
-    const initialize: kt.TransformInitialize = (logOptions: kt.TransformInitializeLogOptions) => {
-        log4js.setGlobalLogLevel(logOptions.level);
-        log4js.configure({ appenders: logOptions.appenders });
-        log = log4js.getLogger("es6-transform.karma-typescript");
+    const initialize: kt.TransformInitialize = () => {
         walk = require("acorn/dist/walk");
     };
 

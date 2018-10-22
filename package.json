@@ -42,7 +42,6 @@
     "acorn": "^5.4.1",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
-    "log4js": "^1.1.1",
     "magic-string": "^0.22.4"
   },
   "devDependencies": {
