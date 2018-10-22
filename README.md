@@ -4,6 +4,10 @@
 [![Travis build status](https://travis-ci.org/monounity/karma-typescript-es6-transform.svg?branch=master)](https://travis-ci.org/monounity/karma-typescript-es6-transform)
 [![Appveyor build status](https://ci.appveyor.com/api/projects/status/xxj96uxqhf8la0bo/branch/master?svg=true)](https://ci.appveyor.com/project/monounity/karma-typescript-es6-transform/branch/master)
 
+This is a fork of https://github.com/monounity/karma-typescript-es6-transform which uses Babel 7
+
+Original README:
+
 > Karma-Typescript :heart: ES2015
 
 This plugin uses the [Babel compiler](https://www.npmjs.com/package/babel-core) to transform ES2015 (aka ES6) code to ES5 syntax, making the code browser compatible when running tests with [karma-typescript](https://github.com/monounity/karma-typescript).
